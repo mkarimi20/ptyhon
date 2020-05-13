@@ -3,7 +3,7 @@ salary = (input("enter your currnt salary: "))
 
 
 def salary_cal(salary):
-    if input is None:
+    if salary is None:
         print(name, + ' your slary is $1000')
     
     elif int(salary) > 0:
