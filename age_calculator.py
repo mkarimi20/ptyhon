@@ -1,5 +1,5 @@
 import datetime
-name= (input("enter your name: "))
+name = (input("enter your name: "))
 age = (input("enter your current age: "))
 now = datetime.datetime.now()
 
