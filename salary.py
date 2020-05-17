@@ -1,12 +1,12 @@
-name = (input("enter your name: "))
-salary = (input("enter your currnt salary: "))
+name = str(input("enter your name: "))
+salary = input("enter your currnt salary: ")
 
 
 def salary_cal(salary):
-    if salary is None:
-        print(name, + ' your slary is $1000')
+    if len(salary) < 1:
+        print(str(name) + ' your slary is $1000')
     
-    elif int(salary) > 0:
+    elif salary is not None and int(salary) > 0:
         print(str(name) + " your slary is " + str(salary))
     
-print(salary_cal(salary))
+salary_cal(salary)
