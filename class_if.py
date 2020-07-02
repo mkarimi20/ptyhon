@@ -16,6 +16,3 @@ menu = lunch("menu_1")
 menu_two = lunch('menu_2')
 print(menu.menu_price())
 print(menu_two.menu_price())
-
-
-
