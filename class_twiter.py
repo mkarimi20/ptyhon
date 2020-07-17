@@ -30,6 +30,10 @@ print(user2.country, user2.name, user2.salary_add())
 
 
 #print('Number of Employees: ', twiter_user.num_of_employees)
-    
 
 
+class User(twiter_user):
+    def __init__(self, salary, phone_num, country, name, last_name):
+        super().__init__(salary, phone_num, country, name, last_name)
+user_new = User(1234567,4567,'AFG',"Ali","BlabBlab")
+print(user_new.country)
