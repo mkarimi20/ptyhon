@@ -1,0 +1,16 @@
+server:
+  instance_type: t2.micro
+  volumes:                # In AWS case
+    - device: /dev/xvda   # "Device": "/dev/xvda"
+      size_gb: 10         # "Size": 8
+      type: ext4          # "VolumeType": "gp2"
+      mount: /
+
+    - device: /dev/xvdf
+      size_gb: 100
+      type: xfs
+      mount: /data
+
+  users:
+    - login: user1
+      ssh_key: <user ssh public key goes here> user1@localhost
